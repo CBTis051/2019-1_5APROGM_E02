@@ -3,7 +3,7 @@ const sequelize = require('../models/db');
 
 
 const Usuario = sequelize.define('usuario', {
-        // atributes
+        // attributes
         id: {
             type: Sequelize.INTEGER,
             primaryKey: true,
@@ -36,3 +36,5 @@ const Usuario = sequelize.define('usuario', {
         }
     }
 );
+
+module.exports = Usuario;

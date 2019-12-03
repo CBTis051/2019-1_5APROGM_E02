@@ -8,7 +8,7 @@ const Usuario = require('../models/usuario');
 /**
  * Login del server --> /login
  */
-app.host('/login', (req, res) => {
+app.post('/login', (req, res) => {
 
     // Obtenemos las credenciales
     let body = req.body;
